@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카카오맵</title>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	85eef9a6f0056d06051a0e3231c88f0c&libraries=services, clusterer, drawing"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="/kakaomap/images/favicon.png">
     <link rel="stylesheet" href="/kakaomap/css/map.css">
     <link rel="stylesheet" href="/kakaomap/css/kakaomap.css">
@@ -39,7 +39,19 @@
                 <li><a href="" class="mainmenutab">MY</a></li>
             </ul>
             <div class="report-error">
-
+                <span class="text">동구 범일동</span>
+                <span class="infoAir">
+                <span class="txt-air">구름많음 <span class="temper">16˚</span> 
+                    <span class="txt-change">어제보다 1℃ 낮아요</span>
+                    <span class="txt-bar"></span>
+                    <span class="txt-dust">미세
+                        <span class="txt-dust-state">좋음</span>
+                    </span>
+                    <span class="txt-mic-dust">초미세
+                        <span class="txt-mic-dust-state">좋음</span>
+                    </span>
+                </span>
+                </span>
             </div>
             <div class="info">
                 <h3 class="title-around">주변 탐색</h3>
@@ -52,42 +64,43 @@
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                            <span class="button-title">카페</span>
                         </button>
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-bus-simple"></i></div>
+                            <span class="button-title">버스</span>
                         </button>
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-train-subway"></i></div>
+                            <span class="button-title">지하철</span>
                         </button>
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-bed"></i></div>
+                            <span class="button-title">숙박</span>
                         </button>
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-won-sign"></i></div>
+                            <span class="button-title">은행</span>
                         </button>
                     </li>
                     <li>
                         <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
+                            <div class="button-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <span class="button-title">편의점</span>
                         </button>
                     </li>
                 </ul>
             </div>
+            <button type="button" class="toggle-button">◀</button>
         </aside>
         <div id="map" ></div>
     </div>
