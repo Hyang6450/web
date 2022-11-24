@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .flex-box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: space-around;
+
+            border: 1px solid black;
+            padding: 10px;
+            width: 800px;
+            height: 400px;
+        }
+
+        .box {
+            width: 90px;
+            height: 90px;
+
+            background-color: khaki;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-box"></div>
+    <button>box 추가</button>
+
+    <script>
+        const addButton = document.querySelector("button");
+
+        let count = 0;
+
+        addButton.onclick = () => {
+            const flexBox = document.querySelector(".flex-box");
+            count++;
+            flexBox.innerHTML += `<div class="box">${count}</div>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"> <!-- 전체 틀, 클래스는 여러개 가능, 태그도 여러개 가능, 아이디는 무조건 한개 -->
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <h1>A</h1>
+        <h1>B</h1>
+        <h1>C</h1>
+        <h1>D</h1>
+    </div>
+    <script>
+        const a = document.getElementById("container");
+        const box1 = document.getElementsByClassName("box")[0]; // [0]을 안하면 class가 box인것을 다 들고온다.
+        const h1 = document.getElementsByTagName("h1")[1]; 
+
+        box1.onclick = () => {
+            alert("box1을 클릭하셨습니다.");
+        }
+
+        h1.onclick = () => {
+            alert(h1.textContent);
+        }
+
+        // console.log(a);
+        // console.log(box1);
+    </script>
+</body>
+</html>
