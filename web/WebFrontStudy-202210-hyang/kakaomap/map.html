@@ -26,103 +26,115 @@
                         <label for="my-location" class="my-location-label">현 지도 내 장소검색</label>
                     </div>
                 </div>
-                <div class="search">
+                <div class="search-container">
+                     <div class="search">
                     <input type="text" class="search-input" placeholder="장소, 주소, 버스 검색">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+                <div class="search-recent invisible-recent">
+                    <div class="title-recent">
+                        히스토리가 없습니다.
+                    </div>
+                    <ul class="list-recent"></ul>
+                    <div class="favorite-recent">
+                        <button type="button" class="button-recentoff">히스토리 끄기</button>
+                    </div>
+                </div>
+                </div>
+               
             </header>
             <ul class="menu">
-                <li><a href="" class="mainmenutab tab-selected">검색</a></li>
-                <li><a href="" class="mainmenutab">길찾기</a></li>
-                <li><a href="" class="mainmenutab">버스</a></li>
-                <li><a href="" class="mainmenutab">지하철</a></li>
-                <li><a href="" class="mainmenutab">MY</a></li>
+                <li><a href="javascript:void(0);" class="mainmenutab tab-selected">검색</a></li> <!--클릭해도 아무런 동작을 할 수 없도록 막아주는 역할-->
+                <li><a href="javascript:void(0);" class="mainmenutab">길찾기</a></li>
+                <li><a href="javascript:void(0);" class="mainmenutab">버스</a></li>
+                <li><a href="javascript:void(0);" class="mainmenutab">지하철</a></li>
+                <li><a href="javascript:void(0);" class="mainmenutab">MY</a></li>
             </ul>
-            <div class="report-error">
-                <span class="text">동구 범일동</span>
-                <span class="infoAir">
-                <span class="txt-air">구름많음 <span class="temper">16˚</span> 
-                    <span class="txt-change">어제보다 1℃ 낮아요</span>
-                    <span class="txt-bar"></span>
-                    <span class="txt-dust">미세
-                        <span class="txt-dust-state">좋음</span>
-                    </span>
-                    <span class="txt-mic-dust">초미세
-                        <span class="txt-mic-dust-state">좋음</span>
-                    </span>
-                </span>
-                </span>
+            <div class="info-body">
+                <div class="search-body">
+                    <div class="report-error">
+                        <span class="text">동구 범일동</span>
+                        <span class="infoAir">
+                            <span class="txt-air">구름많음 <span class="temper">16˚</span> 
+                            <span class="txt-change">어제보다 1℃ 낮아요</span>
+                            <span class="txt-bar"></span>
+                            <span class="txt-dust">미세
+                            <span class="txt-dust-state">좋음</span>
+                        </span>
+                        <span class="txt-mic-dust">초미세
+                            <span class="txt-mic-dust-state">좋음</span>
+                        </span>
+                        </span>
+                        </span> 
+                    </div>                  
+                
+                
+                <div class="info">
+                    <h3 class="title-around">주변 탐색</h3>
+                    <ul class="list-around">
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
+                                <span class="button-title">음식점</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <span class="button-title">카페</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-bus-simple"></i></div>
+                                <span class="button-title">버스</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-train-subway"></i></div>
+                                <span class="button-title">지하철</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-bed"></i></div>
+                                <span class="button-title">숙박</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-won-sign"></i></div>
+                                <span class="button-title">은행</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-around">
+                                <div class="button-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <span class="button-title">편의점</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="favorite-exposed">
+                        <h4 class="link_myfavorite">즐겨찾기</h4>
+                        <li><span class="icon-home"></span><span class="home">집 주소를 등록하세요.</span></li>
+                        <li><span class="icon-office"></span><span class="office">회사 주소를 등록하세요.</span></li>
+                    </div>
+                </div>
+                </div>
+                <div class="search-body invisible-body">길찾기 화면</div>
+                <div class="search-body invisible-body">버스찾기 화면</div>
+                <div class="search-body invisible-body">지하철 화면</div>
+                <div class="search-body invisible-body">MY 화면</div>
             </div>
-            <div class="info">
-                <h3 class="title-around">주변 탐색</h3>
-                <ul class="list-around">
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"> <i class="fa-solid fa-utensils"></i></div>
-                            <span class="button-title">음식점</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-mug-hot"></i></div>
-                            <span class="button-title">카페</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-bus-simple"></i></div>
-                            <span class="button-title">버스</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-train-subway"></i></div>
-                            <span class="button-title">지하철</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-bed"></i></div>
-                            <span class="button-title">숙박</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-won-sign"></i></div>
-                            <span class="button-title">은행</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button-around">
-                            <div class="button-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-                            <span class="button-title">편의점</span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
+           
             <button type="button" class="toggle-button">◀</button>
         </aside>
         <div id="map" ></div>
     </div>
     
-    <script>
-        var container = document.getElementById('map'); 
-        var options = { 
-	    center: new kakao.maps.LatLng(33.450701, 126.570667), 
-	    level: 3 
-        };
-
-        
-        var map = new kakao.maps.Map(container, options); 
-
-        
-        var mapTypeControl = new kakao.maps.MapTypeControl();
-
+    <script src = "/kakaomap/js/map.js">
        
-        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
-        var zoomControl = new kakao.maps.ZoomControl();
-        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     </script>
  
 </body>
